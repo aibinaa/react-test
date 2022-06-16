@@ -1,19 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import listSvg from './assets/icons/list.svg'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Editor <code>src/App.js</code> and jjj save to reload.
-        </p>
-
-
-      </header>
+  return <div className="todo">
+    <div className="todo_sidebar">
+      <ul className="todo_list">
+        <li>
+          <i>
+            <img src={listSvg} alt='icon list'/>
+          </i>
+          <span>All Tasks</span>
+        </li>
+      </ul>
     </div>
-  );
+    <div className="todo_tasks">
+
+    </div>
+  </div>
 }
 
 export default App;
